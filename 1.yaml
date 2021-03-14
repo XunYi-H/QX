@@ -5,27 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - name: 🇸🇬新加坡新达城
-    server: ap1-sg.er3.xyz
-    port: 29986
-    type: http
-    username: "415094113289895936"
-    password: a34582ff-34dc-40ac-9c18-ee6916162238
-    tls: true
-  - name: 🇭🇰香港铜锣湾   
-    server: a1.er3.xyz
-    port: 29980
-    type: http
-    username: "415094113289895936"
-    password: a34582ff-34dc-40ac-9c18-ee6916162238
-    tls: true
-  - name: 🇸🇬新加坡 
-    server: tx.wy.fastqvpn.com
-    port: 29980
-    type: http
-    username: "415094113289895936"
-    password: a34582ff-34dc-40ac-9c18-ee6916162238
-    tls: true  
   - name: 🇯🇵东京银座   
     server: a1.ap.fastqvpn.com
     port: 29980
@@ -85,24 +64,6 @@ proxies:
     password: 08601122-3e17-41f6-ac37-8a13e51618d3
     tls: true
     skip-cert-verify: true
-    
-  - name: 🇩🇪德国柏林
-    server: ap1-ge.er3.xyz
-    port: 29984
-    type: http
-    username: "415092407206412288"
-    password: 08601122-3e17-41f6-ac37-8a13e51618d3
-    tls: true
-    skip-cert-verify: true
-  - name: 🇨🇦加拿大多伦多   
-    server: ap1-ca.er3.xyz
-    port: 29983
-    type: http
-    username: "415092407206412288"
-    password: 08601122-3e17-41f6-ac37-8a13e51618d3
-    tls: true
-    skip-cert-verify: true
-    
   - name: 🇦🇺澳大利亚悉尼    
     server: ap1-au.er3.xyz
     port: 29982
@@ -115,9 +76,6 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 🇸🇬新加坡新达城
-      - 🇭🇰香港铜锣湾
-      - 🇸🇬新加坡
       - 🇯🇵东京银座
       - 🇸🇬新加坡圣淘沙
       - 🇸🇬新加坡滨海湾
@@ -126,8 +84,6 @@ proxy-groups:
       - 🇯🇵日本大阪
       - 🇺🇸美国曼哈顿
       - 🇬🇧英国牛津
-      - 🇩🇪德国柏林
-      - 🇨🇦加拿大多伦多
       - 🇦🇺澳大利亚悉尼 
   - name: ♻️ 自动选择
     type: url-test
@@ -135,9 +91,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬新加坡新达城
-      - 🇭🇰香港铜锣湾
-      - 🇸🇬新加坡
       - 🇯🇵东京银座
       - 🇸🇬新加坡圣淘沙
       - 🇸🇬新加坡滨海湾
@@ -146,8 +99,6 @@ proxy-groups:
       - 🇯🇵日本大阪
       - 🇺🇸美国曼哈顿
       - 🇬🇧英国牛津
-      - 🇩🇪德国柏林
-      - 🇨🇦加拿大多伦多
       - 🇦🇺澳大利亚悉尼
   - name: 🌍 国外媒体
     type: select
