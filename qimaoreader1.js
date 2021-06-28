@@ -3,7 +3,7 @@
 #七猫小说解锁终身会员+去广告
 #我的页面显示vip会员
 [rewrite_local]
-^https:\/\/xiaoshuo.wtzw.com/api/v2/user/my-center(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/qimaoreader.js
+^https:\/\/xiaoshuo.wtzw.com\/api\/v2\/user\/my(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/qimaoreader.js
 
 [mitm]
 hostname = xiaoshuo.wtzw.com,
