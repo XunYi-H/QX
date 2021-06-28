@@ -12,7 +12,7 @@ hostname = xiaoshuo.wtzw.com,
 
 */
 var body = $response.body;
-body = body.replace(".+",'{"data": {"vip_list": ["点击屏幕中央可以呼出菜单"]}}');
+body = body.replace(/.+/g,'{"data": {"vip_list": ["点击屏幕中央可以呼出菜单"]}}');
 //body = JSON.stringify(obj);
 $done(body); 
 //$done({body: JSON.stringify(obj)});//重新打包回json格式并结束修改
