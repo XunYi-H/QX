@@ -8,10 +8,6 @@
 [mitm]
 hostname = api-ks.wtzw.com,
 */
-//let obj = JSON.parse($response.body);//获取相应消息体（json格式）,并转换成对象处理
-*/
-var body = $response.body;//声明一个body变量并以响应体赋值（json格式）
-var body = (body.replace(/.+/g,'123'));
-body = JSON.stringify(body);
-$done(body); 
-//$done({body: JSON.stringify(obj)});//重新打包回json格式并结束修改
+let obj = JSON.parse($response.body);
+obj = {1};
+$done({body: JSON.stringify(obj)});
