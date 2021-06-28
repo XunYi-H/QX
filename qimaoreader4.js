@@ -8,6 +8,8 @@
 [mitm]
 hostname = api-ks.wtzw.com,
 */
-let obj = JSON.parse($response.body);
-obj = {1};
-$done({body: JSON.stringify(obj)});
+var body = $response.body;//获取响应消息体JSON
+var str = JSON.stringify(body);//将JSON转化成字符串
+var a = str.replace(/.+/g, "test");
+body = JSON.stringify(a);
+$done(body);
