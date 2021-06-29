@@ -14,6 +14,6 @@ var body = $response.body;
 
 
 
-var a = str.replace("\"payTime\":\{\"__type\":\"Date\",\"iso\":\"2021-06-30T07:39:36.993Z\"", "\"payTime\":\{\"__type\":\"Date\",\"iso\":\"2099-06-30T07:39:36.993Z\"");
+var a = body.replace("\"payTime\":\{\"__type\":\"Date\",\"iso\":\"2021-06-30T07:39:36.993Z\"", "\"payTime\":\{\"__type\":\"Date\",\"iso\":\"2099-06-30T07:39:36.993Z\"");
 //var b = str.replace("true","true");
 $done({body: JSON.stringify(a)});//重新打包回json格式并结束修改
