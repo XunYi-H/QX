@@ -1,9 +1,8 @@
 /*
 圈X:
-#OneVPN
-#解锁vip会员
+#OneVPN解锁会员
 [rewrite_local]
-^https?:\/\/one\.sshub\.top\/1\.1\/classes\/UserData(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/OneVPN.js
+^https\:\/\/one\.sshub.top\/1\.1\/classes\/UserData(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/OneVPN.js
 
 [mitm]
 hostname = one.sshub.top,
@@ -11,6 +10,7 @@ hostname = one.sshub.top,
 var body = $response.body;
 var obj = JSON.parse(body);
 obj.results[0].payTime.iso = "2099-06-30T07:39:36.993Z";
+obj.results[0].isPay = true;
 body = JSON.stringify(obj);
 $done(body);
 
