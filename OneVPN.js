@@ -3,7 +3,7 @@
 #OneVPN
 #解锁vip会员
 [rewrite_local]
-^https:\/\/one.sshub.top\/1.1\/classes\/UserData(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/OneVPN.js
+^https?:\/\/one\.sshub\.top\/1\.1\/classes\/UserData(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/OneVPN.js
 
 [mitm]
 hostname = one.sshub.top,
