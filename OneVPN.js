@@ -9,7 +9,7 @@ hostname = one.sshub.top,
 */
 var body = $response.body;
 var obj = JSON.parse(body);
-obj.results[0].payTime.iso = "2099-06-30T07:39:36.993Z";
+obj.results[0].payTime.iso = "2099-01-01T00:00:000.000Z";
 obj.results[0].isPay = true;
 body = JSON.stringify(obj);
 $done(body);
