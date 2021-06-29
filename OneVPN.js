@@ -8,7 +8,8 @@
 [mitm]
 hostname = one.sshub.top,
 */
-let obj = JSON.parse($response.body);//获取相应消息体（json格式）,并转换成对象处理
-obj.results.payTime.iso = "2099-06-30T01:01:01.999Z";
-obj.results.isPay = true;
+var body = $response.body;
+var str = JSON.stringify(body);
+var a = str.replace("\"payTime\":\{\"__type\":\"Date\",\"iso\":\"2021-06-30T07:39:36.993Z\"", "\"payTime\":\{\"__type\":\"Date\",\"iso\":\"2099-06-30T07:39:36.993Z\"");
+var b = str.replace("false","true");
 $done({body: JSON.stringify(obj)});//重新打包回json格式并结束修改
