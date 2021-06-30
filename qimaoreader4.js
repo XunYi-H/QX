@@ -9,6 +9,6 @@
 hostname = api-ks.wtzw.com,
 */
 
-//var body = $response.body.replace(/.+/g,"{\"data\":{\"vip_list\":[\"七猫看书永久免费\"]}}");
-var body = $response.body.replace(/.+/g,"");
+var body = $response.body.replace(/.+/g,"{\"data\":{\"vip_list\":[\"七猫看书永久免费\"]}}");
+//var body = $response.body.replace(/.+/g,"");
 $done(body);
