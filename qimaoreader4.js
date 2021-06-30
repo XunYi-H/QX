@@ -8,13 +8,7 @@
 [mitm]
 hostname = api-ks.wtzw.com,
 */
-/*
-var body = $response.body;//获取响应消息体JSON
-var str = JSON.parse(body);//将JSON转化成字符串
-var txt = str.replace(/.+/g,"{\"data\":{\"vip_list\":[\"七猫看书永久免费\"]}}");
-//var txt = str.replace(/.+/g, "");//正则替换全部字符串为空
-var body = JSON.stringify(txt);//重新打包回JSON字符串
-$done(body);//结束修改
-*/
-var body = $response.body.replace(/.+/g,"{\"data\":{\"vip_list\":[\"七猫看书永久免费\"]}}");
+
+//var body = $response.body.replace(/.+/g,"{\"data\":{\"vip_list\":[\"七猫看书永久免费\"]}}");
+var body = $response.body.replace(/.+/g,"");
 $done(body);
