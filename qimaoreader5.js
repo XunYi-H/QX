@@ -3,7 +3,7 @@
 #七猫小说解锁终身会员+去广告
 #去除阅读中的底部中间广告
 [rewrite_local]
-^https?:\/\/api-ks\.wtzw\.com\/api\/v1\/init-adv\/index(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/qimaoreader4.js
+^https?:\/\/api-ks\.wtzw\.com\/api\/v1\/init-adv\/index(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/qimaoreader5.js
 [mitm]
 hostname = api-ks.wtzw.com,
 */
