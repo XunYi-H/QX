@@ -3,7 +3,7 @@
 圈X:
 #新一键连
 [rewrite_local]
-^https:\/\/ac\.centaur\.cloud\/api\/accounts\/me(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/newyjl.js
+^https:\/\/tc\.wmho\.space\/api\/accounts\/me\/orders(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/newyjlod.js
 [mitm]
 hostname = ac.centaur.cloud,
 */
