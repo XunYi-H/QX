@@ -2,11 +2,11 @@
 /*
 AniVPN unlock vip
 QX:
-^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/wnyd.js
-Surge4：
-http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/TinyRainy0921/ruler/main/wnyd.js
+[rewrite local]
+^https?:https:\/\/mamftei71za0evcs\.space\/api_all_init\.php url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/AniVPN.js
+[mitm]
+hostname = mamftei71za0evcs.space
 */
-
 var body = $response.body;
 var obj = JSON.parse(body);
 
