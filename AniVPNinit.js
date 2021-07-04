@@ -3,7 +3,7 @@
 AniVPN unlock vip
 QX:
 [rewrite local]
-^https?:https:\/\/mamftei71za0evcs\.space\/api_all_init.php url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/AniVPN.js
+^https?:https:\/\/mamftei71za0evcs\.space\/api_all_init.php url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/AniVPNinit.js
 [mitm]
 hostname = mamftei71za0evcs.space
 */
