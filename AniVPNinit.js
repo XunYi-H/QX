@@ -10,8 +10,6 @@ hostname = mamftei71za0evcs.space
 var body = $response.body;
 var obj = JSON.parse(body);
 
-obj.message.user.tried_15days = 1;
-obj.message.user.tried_48hours = 0;
 obj.message.account.is_expired = 0;
 obj.message.account.end_time = 4070880000;
 obj.message.account.is_expired = 0;
