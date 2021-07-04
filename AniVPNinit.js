@@ -12,6 +12,7 @@ var obj = JSON.parse(body);
 
 obj.message.user.tried_15days = 1;
 obj.message.user.tried_48hours = 0;
+obj.message.account.is_expired = 0;
 
 body = JSON.stringify(obj);
 $done({body});
