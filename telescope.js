@@ -17,5 +17,5 @@ obj.data.user.timeRemaining = 99999999;
 obj.data.user.flowTotal = "3000000GB";
 obj.data.user.flowRemaining = "3000000GB";
 obj.data.user.status = 0;
-obj.data.user.vip = "1";
+obj.data.user.vip = 1;
 $done({body: JSON.stringify(obj)});//重新打包回json格式并结束修改
