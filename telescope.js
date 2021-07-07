@@ -11,7 +11,7 @@ let obj = JSON.parse($response.body);//获取相应消息体（json格式）,并
 
 obj.data.paidUser = true;
 obj.data.totalTransfer = 999999999999;
-obj.data.expiredDate = 2099-01-01;
+obj.data.expiredDate = "2099-01-01";
 obj.data.timeRemaining = 99999999;
 obj.data.flowTotal = "30000000.0GB";
 obj.data.flowRemaining = "30000000.0GB";
