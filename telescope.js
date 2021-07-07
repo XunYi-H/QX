@@ -3,7 +3,7 @@
 #telescope vip
 
 [rewrite_local]
-^https:\/\/api-1\.quickg\.cc\/api\/v2\/user url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/telescope.js
+^https:\/\/api-1\.quickg\.cc\/api\/(v2|v4)\/(user|trial) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/telescope.js
 [mitm]
 hostname = api-1.quickg.cc,
 */
