@@ -1,3 +1,12 @@
+/*
+圈X:
+#剪影恢复会员
+[rewrite_local]
+^https\:\/\/buy.itunes.apple.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/jianying.js
+[mitm]
+hostname = buy.itunes.apple.com,
+*/
+
 let obj = JSON.parse($response.body);
 obj = 
 {
