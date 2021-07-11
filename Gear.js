@@ -1,5 +1,11 @@
-
-
+/*
+圈X:
+#Gear解锁会员
+[rewrite_local]
+^https\:\/\/buy.itunes.apple.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/Gear.js
+[mitm]
+hostname = buy.itunes.apple.com,
+*/
 
 var obj = JSON.parse($response.body);
 var bundle_id = obj.receipt["bundle_id"];
