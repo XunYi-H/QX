@@ -3,7 +3,7 @@
 #全球说解锁vip
 
 [rewrite_local]
-^https:\/\/api.talkmate.com\/umvi\/user\/info url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/globalspeak.js
+^https:\/\/api.talkmate.com\/umvi\/user\/info url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/globalspeak1.js
 [mitm]
 hostname = api.talkmate.com,
 */
