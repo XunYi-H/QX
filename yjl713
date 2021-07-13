@@ -1,9 +1,6 @@
 http =a1.ap.fastqvpn.com:29980, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true,tls-verification=true, tag=🇭🇰 总流量3GB|剩余:3GB
-http =a1.ap.fastqvpn.com:29980, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=true, tag=🇭🇰 W8UKZS_香港节点
-http =a1.ap.fastqvpn.com:29980, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=true, tag=🇸🇬 W8UKZS_新加坡节点
-http =global.ap.fastqvpn.com:29982, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=false, tag=🇦🇺 W8UKZS_澳大利亚节点
-http =global.ap.fastqvpn.com:29983, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=false, tag=🇨🇦 W8UKZS_加拿大节点
-http =global.ap.fastqvpn.com:29984, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=false, tag=🇩🇪 W8UKZS_德国节点
-http =global.ap.fastqvpn.com:29985, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=false, tag=🇯🇵 W8UKZS_日本节点
-http =global.ap.fastqvpn.com:29987, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=false, tag=🇬🇧 W8UKZS_英国节点
-http =global.ap.fastqvpn.com:29988, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=false, tag=🇺🇸 W8UKZS_美国节点
+http =a1.ap.fastqvpn.com:29980, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=true, tag=🇭🇰 新加坡节点
+http =a1.ap.fastqvpn.com:29980, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=true, tag=🇸🇬 新加坡节点
+http =a1.jc.fastqvpn.com:29980, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true,tls-verification=true, tag=🇭🇰 新加坡节点
+http =a1.jc.fastqvpn.com:29980, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=true, tag=🇭🇰 新加坡节点
+http =a1.jc.fastqvpn.com:29980, username=467392950930771968, password=5af75b81-c408-4f36-947b-38e573d2e019, over-tls=true, tls-verification=true, tag=🇸🇬 新加坡节点
