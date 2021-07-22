@@ -1,15 +1,15 @@
-http=pt2.centaur.network:8088,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇭🇰【WAEWSN】香港_GJ
-http=pt2.centaur.network:8089,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇭🇰【WAEWSN】香港_GJ
-http=pt2.centaur.network:8090,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇭🇰【WAEWSN】香港_GJ
-http=pt2.centaur.network:8091,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇭🇰【WAEWSN】香港_GJ
-http=pt2.centaur.network:8092,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇨🇦【WAEWSN】加拿大_GJ
-http=pt2.centaur.network:8093,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇩🇪【WAEWSN】德国_GJ
-http=pt2.centaur.network:8094,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇯🇵【WAEWSN】日本_GJ
-http=pt2.centaur.network:8095,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇬🇧【WAEWSN】英国_GJ
-http=pt2.centaur.network:8096,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇺🇸【WAEWSN】美国_GJ
-http=pt2.centaur.network:8097,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇭🇰【WAEWSN】香港_GJ
-http=pt2.centaur.network:8098,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇨🇦【WAEWSN】加拿大_GJ
-http=pt2.centaur.network:8099,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇩🇪【WAEWSN】德国_GJ
-http=pt2.centaur.network:8100,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇯🇵【WAEWSN】日本_GJ
-http=pt2.centaur.network:8101,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇬🇧【WAEWSN】英国_GJ
-http=pt2.centaur.network:8102,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=🇺🇸【WAEWSN】美国_GJ
+http=pt2.centaur.network:8088,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8088
+http=pt2.centaur.network:8089,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8089
+http=pt2.centaur.network:8090,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8090
+http=pt2.centaur.network:8091,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8091
+http=pt2.centaur.network:8092,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8092
+http=pt2.centaur.network:8093,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8093
+http=pt2.centaur.network:8094,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8094
+http=pt2.centaur.network:8095,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8095
+http=pt2.centaur.network:8096,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8096
+http=pt2.centaur.network:8097,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8097
+http=pt2.centaur.network:8098,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8098
+http=pt2.centaur.network:8099,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8099
+http=pt2.centaur.network:8100,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8100
+http=pt2.centaur.network:8101,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8101
+http=pt2.centaur.network:8102,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=8102
