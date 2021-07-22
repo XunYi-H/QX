@@ -6988,5 +6988,3 @@ http=pt2.centaur.network:9996,username=470230202140590080,password=ac20bbbf-4f06
 http=pt2.centaur.network:9997,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=9997
 http=pt2.centaur.network:9998,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=9998
 http=pt2.centaur.network:9999,username=470230202140590080,password=ac20bbbf-4f06-4d0f-9b4e-46a3d346dc21,over-tls=true,tls-verification=false,tag=9999
-
-Process finished with exit code 0
