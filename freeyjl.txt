@@ -1,0 +1,3 @@
+http=pt2.centaur.network:8090,username=000,password=000,over-tls=true,tls-verification=false,tag=8090
+http=pt2.centaur.network:8091,username=000,password=000,over-tls=true,tls-verification=false,tag=8091
+http=pt2.centaur.network:8092,username=000,password=000,over-tls=true,tls-verification=false,tag=8092
