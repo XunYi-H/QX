@@ -2,7 +2,7 @@
 圈X:
 #狗急加速
 [rewrite_local]
-^https\:\/\/ac.gojapp.com\/api\/account\/me\/udid(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/gojump.js
+^https\:\/\/ac.gojapp.com\/api\/accounts\/me(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/gojump.js
 [mitm]
 hostname = ac.gojapp.com,
 */
