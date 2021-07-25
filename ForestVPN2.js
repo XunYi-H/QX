@@ -47,7 +47,7 @@ obj = {
 		}
 	],
 	"ports": null,
-	"last_active_at": "2021-07-12T19:23:03.785980Z",
+	"last_active_at": "2099-01-01T00:00:00.000000Z",
 	"name": "iPhone",
 	"wireguard": {
 		"pub_key": "PqcrtC61lq+qxPnIFa/V2CFdG/OEsDXU2ZrijQcl9UU=",
