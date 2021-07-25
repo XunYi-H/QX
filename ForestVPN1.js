@@ -3,7 +3,7 @@
 圈X:
 #Forest解锁vip
 [rewrite_local]
-^https:\/\/api.forestvpn.com\/v2\/devices\/external(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/ForestVPN1.js
+^https:\/\/api.forestvpn.com\/v2\/devices(.+) url script-response-body https://raw.githubusercontent.com/TinyRainy0921/ruler/main/ForestVPN1.js
 [mitm]
 hostname = api.forestvpn.com,
 */
