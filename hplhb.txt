@@ -1,0 +1,4 @@
+hostname =hrb.mtbcorporate.com,
+//////////////////////////// 圈x
+//哈皮领红包获取ck
+https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId url script-request-body https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js
