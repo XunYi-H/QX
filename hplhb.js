@@ -6,15 +6,15 @@ hplhbbodyVal👉ZNXQ_hplhbBODY👉header
 hostname =hrb.mtbcorporate.com,
 //////////////////////////// 圈x
 //哈皮领红包获取ck
-https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId url script-request-body hplhb.js
+https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId url script-request-body https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js
 
 //////////////////////////// loon
 //哈皮领红包获取ck
-http-request https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId script-path=hplhb.js, requires-header=true, tag=哈皮领红包获取ck
+http-request https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId script-path=https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js, requires-header=true, tag=哈皮领红包获取ck
 
 //////////////////////////// surge
 //哈皮领红包获取ck
-哈皮领红包获取ck = type=http-request,pattern=https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId,requires-header=1,max-size=0,script-path=hplhb.js
+哈皮领红包获取ck = type=http-request,pattern=https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js
 
 */
 
