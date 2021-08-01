@@ -1,14 +1,14 @@
 {
     "id": "ziye.hplhbapp.sub",
     "name": "ziye 哈皮领红包订阅",
-    "author": "@ZIYE",
+    "author": "@XunYi-H",
     "icon": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/ziye.png",
-    "repo": "https://github.com/ziye888",
+    "repo": "https://github.com/XunYi-H",
     "apps": [{
         "id": "hplhbappsss",
         "name": "哈皮领红包",
         "keys": "keys": ["hplhbbody", "hplhbbody2", "hplhbbody3", "hplhbbody4", "hplhbbody5", "hplhbbody6", "hplhbbody7", "hplhbbody8", "hplhbbody9", "hplhbbody10", "hplhbbody11", "hplhbbody12", "hplhbbody13", "hplhbbody14", "hplhbbody15", "hplhbbody16", "hplhbbody17", "hplhbbody18", "hplhbbody19", "hplhbbody20"],
-        "author": "@ziye",
+        "author": "@XunYi-H",
         "settings": [{
             "id": "hplhbSuffix",
             "name": "当前账号",
@@ -65,8 +65,8 @@
         "rows": 8,
         "desc": "红包链接 列表"
     }],
-        "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/hplhb.js",
+        "repo": "https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js",
         "icons": ["https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/hplhb.png", "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/hplhb.png"],
-        "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/hplhb.js"
+        "script": "https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js"
     }]
 }
