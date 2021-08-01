@@ -7,7 +7,7 @@
     "apps": [{
         "id": "hplhbappsss",
         "name": "哈皮领红包",
-        "keys": "keys": ["hplhbbody", "hplhbbody2", "hplhbbody3", "hplhbbody4", "hplhbbody5", "hplhbbody6", "hplhbbody7", "hplhbbody8", "hplhbbody9", "hplhbbody10", "hplhbbody11", "hplhbbody12", "hplhbbody13", "hplhbbody14", "hplhbbody15", "hplhbbody16", "hplhbbody17", "hplhbbody18", "hplhbbody19", "hplhbbody20"],
+        "keys":["hplhbbody", "hplhbbody2", "hplhbbody3", "hplhbbody4", "hplhbbody5", "hplhbbody6", "hplhbbody7", "hplhbbody8", "hplhbbody9", "hplhbbody10", "hplhbbody11", "hplhbbody12", "hplhbbody13", "hplhbbody14", "hplhbbody15", "hplhbbody16", "hplhbbody17", "hplhbbody18", "hplhbbody19", "hplhbbody20"],
         "author": "@ziye",
         "settings": [{
             "id": "hplhbSuffix",
