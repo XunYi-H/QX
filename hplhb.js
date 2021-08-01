@@ -6,21 +6,21 @@ hplhbbodyVal👉ZNXQ_hplhbBODY👉header
 hostname =hrb.mtbcorporate.com,
 //////////////////////////// 圈x
 //哈皮领红包获取ck
-https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId url script-request-body https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js
+https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId url script-request-body hplhb.js
 
 //////////////////////////// loon
 //哈皮领红包获取ck
-http-request https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId script-path=https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js, requires-header=true, tag=哈皮领红包获取ck
+http-request https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId script-path=hplhb.js, requires-header=true, tag=哈皮领红包获取ck
 
 //////////////////////////// surge
 //哈皮领红包获取ck
-哈皮领红包获取ck = type=http-request,pattern=https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js
+哈皮领红包获取ck = type=http-request,pattern=https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId,requires-header=1,max-size=0,script-path=hplhb.js
 
 */
 
 
 
-GXRZ = '8.1.14 制作'
+GXRZ = '8.1.17 制作'
 const $ = Env("哈皮领红包");
 $.idx = ($.idx = ($.getval('hplhbSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
 const notify = $.isNode() ? require("./sendNotify") : ``;
@@ -119,9 +119,6 @@ if ($.isNode() && process.env.hplhb_hplhbBODY) {
         }
         if ($.getdata(`hplhbbody${op}`)) {
             hplhbbodyArr.push($.getdata(`hplhbbody${op}`));
-
-
-
         }
     }
 }
@@ -237,17 +234,12 @@ function ts(inputTime) {
 };
 //今天0点时间戳时间戳
 function daytime(inputTime) {
-    if ($.isNode()) {
-        DAYTIME =
-            new Date(new Date().toLocaleDateString()).getTime() - 8 * 60 * 60 * 1000;
-    } else DAYTIME = new Date(new Date().toLocaleDateString()).getTime();
+    DAYTIME = new Date(new Date().toLocaleDateString()).getTime();
     return DAYTIME;
 };
 //时间戳格式化日期
 function time(inputTime) {
-    if ($.isNode()) {
-        var date = new Date(inputTime + 8 * 60 * 60 * 1000);
-    } else var date = new Date(inputTime);
+    var date = new Date(inputTime);
     Y = date.getFullYear() + '-';
     M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
     D = date.getDate() + ' ';
@@ -257,10 +249,11 @@ function time(inputTime) {
     return Y + M + D + h + m + s;
 };
 //日期格式化时间戳
-function timecs() {
-    if ($.isNode()) {
-        var date = new Date(newtime).getTime() - 8 * 60 * 60 * 1000
-    } else var date = new Date(newtime).getTime()
+function timecs(newtime) {
+    if (newtime.indexOf(" ") >= 0) {
+        newtime = newtime.replace(' ', 'T')
+    }
+    var date = new Date(newtime).getTime()
     return date;
 };
 //随机udid 大写
@@ -388,7 +381,11 @@ async function all() {
                 taskurl = `https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId`
                 await taskpost();
                 $.user = DATA;
-                if ($.user.status == true && $.user.data.userInfo && $.user.data.userInfo.Id) {
+                if ($.user.status == true && $.user.data.userInfo && !$.user.data.userInfo.Mobile) {
+                    console.log(`\n${O}\n此账号异常\n`)
+                    $.message += `\n${O}\n此账号异常\n`;
+                    continue
+                } else if ($.user.status == true && $.user.data.userInfo && $.user.data.userInfo.Id) {
                     nickname = $.user.data.userInfo.nickname
                     Id = $.user.data.userInfo.Id
 
@@ -411,49 +408,89 @@ async function all() {
             }
 
 
+
+            K = `红包记录🚩 `;
+            if (K == `红包记录🚩 `) {
+                taskurl = `https://hrb.mtbcorporate.com/api/OprateApi/GetUserPrizes`
+                taskbody = `{
+  "userPrizeType": 0,
+  "page": 1,
+  "limit": 30,
+  "openId": "${hplhbbodyVal}",
+  "userId": ${Id}
+}
+`
+                await taskpost();
+                $.hbjl = DATA;
+
+                jrgs = 0
+                if ($.hbjl.status && $.hbjl.status == true && $.hbjl.data && $.hbjl.data.length > 0) {
+                    for (let i = 0; i < $.hbjl.data.length; i++) {
+                        if (timecs($.hbjl.data[i].cTime) > daytime()) {
+                            jrgs += 1
+                        }
+                    }
+                    console.log(`红包记录：今日已领取${jrgs}个红包，剩余可领${24-jrgs}个\n`)
+                    $.message += `【红包记录】：今日已领取${jrgs}个红包，剩余可领${24-jrgs}个\n`;
+                } else if ($.hbjl.status && $.hbjl.status == true && $.hbjl.data && $.hbjl.data.length == 0) {
+                    console.log(`红包记录：从未领取过，剩余可领${24-jrgs}个\n`)
+                    $.message += `【红包记录】：从未领取过，剩余可领${24-jrgs}个\n`;
+                } else {
+                    console.log(`红包记录：${$.hbjl.msg}\n`)
+                    $.message += `【红包记录】：${$.hbjl.msg}\n`;
+                }
+            }
+
             K = `获取红包🚩 `;
             if (K == `获取红包🚩 `) {
 
-                xj = 0
-                xjgs = 0
-                IDARRts = IDARR.length
-                for (let i = ids; i < IDARRts; i++) {
-                    DD = RT(3000, 4000)
-                    console.log(`随机延迟${DD/1000}秒`)
-                    await $.wait(DD)
-                    qrCode = IDARR[i]
-                    taskurl = `https://hrb.mtbcorporate.com/api/OprateApi/ScanQrCode`
-                    taskbody = `{"qrCode": "${qrCode}","openId":"${hplhbbodyVal}","userId": ${Id}}`
+                if (jrgs < 24) {
 
-                    await taskpost();
-                    $.hqhb = DATA;
-                    if ($.hqhb.status && $.hqhb.status == true && $.hqhb.data && $.hqhb.data.money) {
-                        xj += $.hqhb.data.money
-                        xjgs += 1
-                        console.log(`获取红包${i+1}：${$.hqhb.data.money}元\n`)
-                        $.message += `【获取红包${i+1}】：${$.hqhb.data.money}元\n`;
-                    } else if ($.hqhb.msg.indexOf("二维码已被使用") >= 0) {
-                        console.log(`获取红包${i+1}：${$.hqhb.msg}，id为${qrCode}\n`)
-                        $.message += `【获取红包${i+1}】：${$.hqhb.msg}，id为${qrCode}\n`;
-                    } else if ($.hqhb.msg.indexOf("上限") >= 0) {
-                        console.log(`获取红包${i+1}：${$.hqhb.msg}，id为${qrCode}\n`)
-                        $.message += `【获取红包${i + 1}】：${$.hqhb.msg}，id为${qrCode}\n`;
-                        ids = i
-                        IDARRts = ids
-                        console.log(ids)
-                        console.log(IDARRts)
-                    } else {
-                        console.log(`获取红包${i+1}：异常-${$.hqhb.msg}，id为${qrCode}\n`)
-                        $.message += `【获取红包${i+1}】：异常-${$.hqhb.msg}，id为${qrCode}\n`;
+                    xj = 0
+                    xjgs = 0
+                    IDARRts = IDARR.length
+                    for (let i = ids; i < IDARRts; i++) {
+                        DD = 3000
+                        console.log(`延迟${DD/1000}秒`)
+                        await $.wait(DD)
+                        qrCode = IDARR[i]
+                        taskurl = `https://hrb.mtbcorporate.com/api/OprateApi/ScanQrCode`
+                        taskbody = `{"qrCode": "${qrCode}","openId":"${hplhbbodyVal}","userId": ${Id}}`
+
+                        await taskpost();
+                        $.hqhb = DATA;
+                        if ($.hqhb.status && $.hqhb.status == true && $.hqhb.data && $.hqhb.data.money) {
+                            xj += $.hqhb.data.money
+                            xjgs += 1
+                            console.log(`获取红包${i+1}：${$.hqhb.data.money}元\n`)
+                            //$.message += `【获取红包${i+1}】：${$.hqhb.data.money}元\n`;
+                        } else if ($.hqhb.msg.indexOf("二维码已被使用") >= 0) {
+                            console.log(`获取红包${i+1}：${$.hqhb.msg}，id为${qrCode}\n`)
+                            $.message += `【获取红包${i+1}】：${$.hqhb.msg}，id为${qrCode}\n`;
+                        } else if ($.hqhb.msg.indexOf("上限") >= 0) {
+                            console.log(`获取红包${i+1}：${$.hqhb.msg}，id为${qrCode}\n`)
+                            $.message += `【获取红包${i + 1}】：${$.hqhb.msg}，id为${qrCode}\n`;
+                            ids = i
+                            IDARRts = ids
+                            console.log(ids)
+                            console.log(IDARRts)
+                        } else {
+                            console.log(`获取红包${i+1}：异常-${$.hqhb.msg}，id为${qrCode}\n`)
+                            $.message += `【获取红包${i+1}】：异常-${$.hqhb.msg}，id为${qrCode}\n`;
+                        }
                     }
-                }
-                console.log(`红包统计：共获得${xjgs}*0.3=${xj.toFixed(2)}元，请到公众号手动领取\n`)
-                $.message += `【红包统计】：共获得${xjgs}*0.3=${xj.toFixed(2)}元，请到公众号手动领取\n`;
+                    console.log(`红包统计：共获得 ${xjgs} X 0.3 = ${xj.toFixed(2)}元，请到公众号手动领取\n`)
+                    $.message += `【红包统计】：共获得 ${xjgs} X 0.3 = ${xj.toFixed(2)}元，请到公众号手动领取\n`;
 
-                if ($.hqhb.msg.indexOf("上限") >= 0) {
-                    continue
-                }
+                    if ($.hqhb.msg.indexOf("上限") >= 0) {
+                        continue
+                    }
+                } else {
 
+                    console.log(`获取红包：今日已达到领取上限\n`)
+                    $.message += `【获取红包】：今日已达到领取上限\n`;
+
+                }
             }
 
         }
