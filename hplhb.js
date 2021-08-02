@@ -6,15 +6,15 @@ hplhbbodyVal👉ZNXQ_hplhbBODY👉header
 hostname =hrb.mtbcorporate.com,
 //////////////////////////// 圈x
 //哈皮领红包获取ck
-https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId url script-request-body https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js
+https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId url script-request-body hplhb.js
 
 //////////////////////////// loon
 //哈皮领红包获取ck
-http-request https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId script-path=https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js, requires-header=true, tag=哈皮领红包获取ck
+http-request https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId script-path=hplhb.js, requires-header=true, tag=哈皮领红包获取ck
 
 //////////////////////////// surge
 //哈皮领红包获取ck
-哈皮领红包获取ck = type=http-request,pattern=https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/XunYi-H/QX/master/hplhb.js
+哈皮领红包获取ck = type=http-request,pattern=https://hrb.mtbcorporate.com/api/LoginApi/GetUserByOpenId,requires-header=1,max-size=0,script-path=hplhb.js
 
 */
 
@@ -430,11 +430,11 @@ async function all() {
                             jrgs += 1
                         }
                     }
-                    console.log(`红包记录：今日已领取${jrgs}个红包，剩余可领${24-jrgs}个\n`)
-                    $.message += `【红包记录】：今日已领取${jrgs}个红包，剩余可领${24-jrgs}个\n`;
+                    console.log(`红包记录：今日已领取${jrgs}个红包，剩余可领${12-jrgs}个\n`)
+                    $.message += `【红包记录】：今日已领取${jrgs}个红包，剩余可领${12-jrgs}个\n`;
                 } else if ($.hbjl.status && $.hbjl.status == true && $.hbjl.data && $.hbjl.data.length == 0) {
-                    console.log(`红包记录：从未领取过，剩余可领${24-jrgs}个\n`)
-                    $.message += `【红包记录】：从未领取过，剩余可领${24-jrgs}个\n`;
+                    console.log(`红包记录：从未领取过，剩余可领${12-jrgs}个\n`)
+                    $.message += `【红包记录】：从未领取过，剩余可领${12-jrgs}个\n`;
                 } else {
                     console.log(`红包记录：${$.hbjl.msg}\n`)
                     $.message += `【红包记录】：${$.hbjl.msg}\n`;
@@ -444,7 +444,7 @@ async function all() {
             K = `获取红包🚩 `;
             if (K == `获取红包🚩 `) {
 
-                if (jrgs < 24) {
+                if (jrgs < 12) {
 
                     xj = 0
                     xjgs = 0
