@@ -15,7 +15,7 @@ Date:20210906 lanter11
 修改为青龙版，抓取分享url写入变量WECHATURL
 增加随机次数，自定义随机时间
  */
-const $ = new Env("中青分享阅读-助力10次");
+const $ = new Env("中青分享阅读-助力");
 //延时随机时间
 let min=18000;
 let max=45000;
