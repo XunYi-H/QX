@@ -1,4 +1,5 @@
 /*
+Author: Curtin
 Date: 2021.7.4 22:25
 中青分享阅读助力10次
 
@@ -8,9 +9,20 @@ Quantumuil X：添加远程重写
 https://gitee.com/curtinlv/qx/raw/master/rewrite/youth.conf, tag=中青 by Curtin, update-interval=172800, opt-parser=false, enabled=true
 
 中青分享一篇文章到自己的微信上，自己点击一下即触发会自动完成10好有阅读奖励 500青豆/次。
-
+###
+增加随机次数
  */
-const $ = new Env("中青分享阅读-助力");
+const $ = new Env("中青分享阅读-助力10次");
+$.idx = ($.idx = ($.getval('zqSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
+var min = $.getdata('zqsharemin') || 3; //分享最少次数
+var max = $.getdata('zqsharemax') || 13; //分享最多次数
+//转换为数字型整数
+min=parseInt(min);
+max=parseInt(max);
+
+//随机生成分享次数 
+var rand = Math.floor(Math.random()*(max-min+1))+min;
+if (rand>13) rand=13;
 if ($request) getShareInfo();
 
 //分享数据获取
@@ -19,18 +31,28 @@ async function getShareInfo() {
     if ($request.headers && $request.url.indexOf("script.baertt.com/count2") > -1) {
       var url = $request.url;
       var s_si = url.match(/si=(.*?)&/)[1];
+      if (url) $.setdata(url,'shareurl_zq'+ $.idx);
       console.log("url:" + url);
       console.log("s_si:" + s_si);
-      $.msg("中青分享", "", "数据获取成功");
-      for(let i=1;i<2;i++){
-        await postShareInfoa(url,s_si, i)
+      let tmp=rand-1;
+      $.msg("中青分享", "", `助力数据获取成功\n请马上关闭微信文章页面\n本次助力${tmp}次`);	  
+      //$.msg("中青分享", "", "数据获取成功");
+      for(let i=1;i<rand;i++){
+         	DD = 8000+Math.floor(6000 * Math.random());
+        	console.log(`随机延迟${DD/1000}秒`);
+		//$.msg("【随机延迟】\n", "", `${DD/1000}秒`);
+		await $.wait(DD);
+		console.log(`分享第${i}次\n`);		
+		//开始分享
+		await postShareInfoa(url,s_si, i)
       }
 
       } else {
-        $.notify("中青分享", "", "️据获取失败");
+         $.notify("中青分享", "", "️url获取失败");
       }
     } catch (eor) {
-    $.msg("中青数据获取失败", "", "️中青数据获取失败");
+		console.log("err" + eor);
+		$.msg("中青数据分享失败", "", "️");
   }
 
   $.done();
@@ -38,7 +60,7 @@ async function getShareInfo() {
 async function postShareInfoa(o_url,o_si, num) {
     return new Promise((resolve) => {
         setTimeout(() => {
-        var desclist = ["分享"];
+        var desclist = ["㊙️这是秘密分享~", "😁不能外传哦~", "☺️猜猜我是谁~","😆别点击太猛，容易feng","适当分享哈哈哈~","🈶广告位招租~","🔍开天眼查会员找木白姐姐~","🎈TG https://t.me/topstyle996","☎️TG频道 https://t.me/TopStyle2021","😆差不多得了，要黑号了~"];
         var n_si = randomsi();
         var iosV = parseInt(Math.random() * (14 - 11 + 1) + 11, 10);
         var n_url = o_url.replace(o_si, n_si);
