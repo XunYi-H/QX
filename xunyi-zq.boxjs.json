@@ -471,8 +471,7 @@
   "repo": "https://raw.githubusercontent.com/xl2101200/-/main/gqsl.js",
   "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg", "https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
   "script": "https://raw.githubusercontent.com/xl2101200/-/main/gqsl.js"
-    },
-   {
+    },{
       "id": "didi_fruit",
       "name": "滴滴橙心果园",
       "keys": [
@@ -499,8 +498,7 @@
       "author": "@passerby-b",
       "repo": "https://gitee.com/passerby-b/javascript/raw/master/JD/passerby-b.boxjs.json",
       "script": "https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_fruit.js"
-    },},
-    {
+    },{
       "id": "youthShareRead",
       "name": "中青分享",
       "keys": [
