@@ -579,7 +579,7 @@
     {
             "id": "jkd",
             "name": "聚看点+",
-            "keys": ["jkdhd", "jkdck","jkdhd2","jkdck2","jkdhd3","jkdck3", "jkdhd4","jkdck4","jkdhd5","jkdck5","jkdhd6", "jkdck6","jkdhd7", "jkdck7","jkdhd8", "jkdck8","jkdhd9", "jkdck9","jkdhd10", "jkdck10","jkdhd11", "jkdck11","jkdhd12", "jkdck12","jkdhd13", "jkdck13","jkdhd14", "jkdck14","jkdhd15", "jkdck15","jkdhd16", "jkdck16","jkdhd17", "jkdck17","jkdhd18", "jkdck18","jkdhd19", "jkdck19","jkdhd20", "jkdck20",],
+            "keys": ["jkdhd", "jkdck","jkdhd2","jkdck2","jkdhd3","jkdck3", "jkdhd4","jkdck4","jkdhd5","jkdck5","jkdhd6", "jkdck6","jkdhd7", "jkdck7","jkdhd8", "jkdck8","jkdhd9", "jkdck9","jkdhd10", "jkdck10","jkdhd11", "jkdck11","jkdhd12", "jkdck12","jkdhd13", "jkdck13","jkdhd14", "jkdck14","jkdhd15", "jkdck15","jkdhd16", "jkdck16","jkdhd17", "jkdck17","jkdhd18", "jkdck18","jkdhd19", "jkdck19","jkdhd20", "jkdck20"],
             "author": "@XunYi",
             "settings": [{
             "id": "jkdstatus",
@@ -605,3 +605,4 @@
             "script": "https://raw.githubusercontent.com/XunYi-H/QX/master/jkd.js"
     },
 }
+]
