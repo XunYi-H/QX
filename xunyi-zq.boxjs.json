@@ -573,9 +573,9 @@
       "repo": "https://gitee.com/Sunert/Scripts/blob/master/Task/kuaishou.js",
       "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/kuaishou.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/kuaishou.png"],
       "script": "https://raw.githubusercontent.com/ztxtop/x/main/kuaishou.js"
-    }
-      ]
     },
+
+ 
     {
             "id": "jkd",
             "name": "聚看点+",
@@ -603,6 +603,7 @@
             "repo": "https://raw.githubusercontent.com/XunYi-H/QX/master/jkd.js",
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
             "script": "https://raw.githubusercontent.com/XunYi-H/QX/master/jkd.js"
-    },
-}
+    }
+
 ]
+}
