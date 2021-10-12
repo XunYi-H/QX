@@ -604,6 +604,8 @@
             "icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
             "script": "https://raw.githubusercontent.com/XunYi-H/QX/master/jkd.js"
     },
+    
+    
     {
       "id": "wyb",
       "name": "无忧行签到",
@@ -657,8 +659,7 @@
           "type": "textarea",
           "autoGrow": true,
           "rows": 2
-        }
-      ],
+        }],
       "repo": "https://raw.githubusercontent.com/XunYi-H/QX/master/wyb.js",
       "icons": ["https://raw.githubusercontent.com/XunYi-H/QX/master/icon/wyx.png","https://raw.githubusercontent.com/XunYi-H/QX/master/icon/wyx.png"],
       "script": "https://raw.githubusercontent.com/XunYi-H/QX/master/wyb.js"
