@@ -609,9 +609,6 @@
     {
       "id": "wyb",
       "name": "无忧行签到",
-      "descs_html": [
-        "支持开发者：<a href=\"http://cp.jegotrip.com.cn/partners/invite/index.html?vActivityName=referral&vProject=jegotripapp&vChannel=mine_refer&islogin=1&jtpnav=1#/shareindex?access_token=49_WimALNogQRBHEyysljihNfB6oYmo1X5F03uN-RDlyYw7VZ2In-_6iiOtK7pVdD5v0Yl8ErB74o9nq8NggpdvI6HBSWfwhzRrE7_p97b9z3A&a=4482&refresh_token=49_I7NPog1pDdYAlnO-0MojmmWGaiVYnf12lUm_konU99KKagO3buIh6UrgkUKs8pljybtxVBDA9WbcXdGzfZPSUryVDTkv_RB0084b8BI_JEk&e=1102&signature=1d8e3467bafbb16f094c431c14f9daae63b60460&openid=oD4plw4DzZ465mJS_KUVIztL39Jk&k=shareInviteBtn_26701596&expires_in=7200&o=26701596&timestamp=1634048539374&token=&host=http%3A%2F%2Fapp.jegotrip.com.cn%2F" target=\"_blank\">App邀请活动链接</a>"
-      ],
       "keys": [
         "wyb_accountId",
         "wyb_userId",
