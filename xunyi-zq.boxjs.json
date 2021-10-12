@@ -659,13 +659,9 @@
           "rows": 2
         }
       ],
-      "script": "https://raw.githubusercontent.com/XunYi-H/QX/master/wyb.js",
-      "author": "@XunYi",
       "repo": "https://raw.githubusercontent.com/XunYi-H/QX/master/wyb.js",
-      "icons": [
-        "https://raw.githubusercontent.com/XunYi-H/QX/master/icon/wyx.png",
-        "https://raw.githubusercontent.com/XunYi-H/QX/master/icon/wyx.png"
-      ]
+      "icons": ["https://raw.githubusercontent.com/XunYi-H/QX/master/icon/wyx.png","https://raw.githubusercontent.com/XunYi-H/QX/master/icon/wyx.png"],
+      "script": "https://raw.githubusercontent.com/XunYi-H/QX/master/wyb.js"
     },
  
     {
