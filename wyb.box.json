@@ -1,0 +1,69 @@
+{
+  "id": "xunyi.app.sub",
+  "name": "xunyi 脚本订阅",
+  "author": "@xunyi",
+  "icon": "https://raw.githubusercontent.com/XunYi-H/QX/master/icon/xunyi.png",
+  "repo": "https://github.com/XunYi-H/QX/tree/master",
+  "apps": [
+    {
+      "id": "wyb",
+      "name": "无忧行",
+      "keys": [
+        "wyb_accountId",
+        "wyb_userId",
+        "wyb_mobile",
+        "wyb_token",
+        "wyb_taskId"
+      ],
+      "settings": [
+        {
+          "id": "wyb_mobile",
+          "name": "手机号码",
+          "val": "",
+          "type": "number",
+          "autoGrow": true,
+          "rows": 2
+        },
+        {
+          "id": "wyb_userId",
+          "name": "User Id",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2
+        },
+        {
+          "id": "wyb_accountId",
+          "name": "Account Id",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2
+        },
+        {
+          "id": "wyb_token",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2
+        },
+        {
+          "id": "wyb_taskId",
+          "name": "Task Id",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2
+        }
+      ],
+      "script": "https://raw.githubusercontent.com/XunYi-H/QX/master/wyb.js",
+      "author": "@xunyi",
+      "repo": "https://raw.githubusercontent.com/XunYi-H/QX/master/wyb.js",
+      "icons": [
+        "https://raw.githubusercontent.com/XunYi-H/QX/master/icon/wyx.png",
+        "https://raw.githubusercontent.com/XunYi-H/QX/master/icon/wyx.png"
+      ]
+    }
+  ]
+}
