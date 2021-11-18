@@ -742,8 +742,9 @@
         "author": "@byxiaopeng",
         "repo": "https://github.com/byxiaopeng/myscripts",
         "script": "https://raw.fastgit.org/byxiaopeng/myscripts/main/xmyd.js"
-    },{
-    "id": "ysy",
+    },
+    {
+    "id": "ysy+",
         "name": "萤石云+",
             "keys": ["ysyhd","ysybody","ysycookie","ysytxbody","ysyhd2","ysybody2","ysycookie2","ysytxbody2","ysyhd3","ysybody3","ysycookie3","ysytxbody3","ysyhd4","ysybody4","ysycookie4","ysytxbody4","ysyhd5","ysybody5","ysycookie5","ysytxbody5","ysyhd6","ysybody6","ysycookie6","ysytxbody6","ysyhd7","ysybody7","ysycookie7","ysytxbody7","ysyhd8","ysybody8","ysycookie8","ysytxbody8,"ysyhd9","ysybody9","ysycookie9","ysytxbody9,"ysyhd10","ysybody10","ysycookie10","ysytxbody10,"ysyhd11","ysybody11","ysycookie11","ysytxbody11,"ysyhd12","ysybody12","ysycookie12","ysytxbody12,"ysyhd13","ysybody13","ysycookie13","ysytxbody13,"ysyhd14","ysybody14","ysycookie14","ysytxbody14,"ysyhd15","ysybody15","ysycookie15","ysytxbody15,"ysyhd16","ysybody16","ysycookie16","ysytxbody16,"ysyhd17","ysybody17","ysycookie17","ysytxbody17,"ysyhd18","ysybody18","ysycookie18","ysytxbody18,"ysyhd19","ysybody19","ysycookie19","ysytxbody19,"ysyhd20","ysybody20","ysycookie20","ysytxbody20,"ysyhd21","ysybody21","ysycookie21","ysytxbody21","ysyhd22","ysybody22","ysycookie22","ysytxbody22","ysyhd23","ysybody23","ysycookie23","ysytxbody23","ysyhd24","ysybody24","ysycookie24","ysytxbody24","ysyhd25","ysybody25","ysycookie25","ysytxbody25","ysyhd26","ysybody26","ysycookie26","ysytxbody26","ysyhd27","ysybody27","ysycookie27","ysytxbody27","ysyhd28","ysybody28","ysycookie28","ysytxbody28,"ysyhd29","ysybody29","ysycookie29","ysytxbody29,"ysyhd30","ysybody30","ysycookie30","ysytxbody30,],
                 "author": "@XunYI",
