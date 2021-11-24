@@ -77,9 +77,9 @@ if (isGetCookie = typeof $request !== 'undefined') {
             drawalVal = DrawalArr[i];
             $.index = i + 1;
             console.log(`\n\n开始【电视家${$.index}】`)
-       //     await signin(); // 签到
-        //    await signinfo(); // 签到信息
-        //    await Addsign(); // 额外奖励，默认额度
+            await signin(); // 签到
+            await signinfo(); // 签到信息
+            await Addsign(); // 额外奖励，默认额度
             if (drawalVal != undefined) {
                 await Withdrawal()
             } else {
