@@ -5,13 +5,13 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: a1.ap.fastqvpn.com:29980, server: a1.ap.fastqvpn.com, port: 29980, type: http, username: 304335491631677440, password: 069e5eb8-f052-4fc3-a900-f58cee9c5600, tls: true, skip-cert-verify: false}
-  - {name: a2.ap.fastqvpn.com:29980, server: a2.ap.fastqvpn.com, port: 29980, type: http, username: 304335491631677440, password: 069e5eb8-f052-4fc3-a900-f58cee9c5600, tls: true, skip-cert-verify: false}
-  - {name: a3.ap.fastqvpn.com:29980, server: a3.ap.fastqvpn.com, port: 29980, type: http, username: 291698543113011200, password: 783f45bb-32e3-4184-bfef-1d7c9d788c5b, tls: true, skip-cert-verify: false}
-  - {name: a4.ap.fastqvpn.com:29980, server: a4.ap.fastqvpn.com, port: 29980, type: http, username: 291698543113011200, password: 783f45bb-32e3-4184-bfef-1d7c9d788c5b, tls: true, skip-cert-verify: false}
-  - {name: ap1-ge.er3.xyz:29984, server: ap1-ge.er3.xyz, port: 29984, type: http, username: 291698543113011200, password: 783f45bb-32e3-4184-bfef-1d7c9d788c5b, tls: true, skip-cert-verify: true}
-  - {name: ap1-au.er3.xyz:29982, server: ap1-au.er3.xyz, port: 29982, type: http, username: 304335491631677440, password: 069e5eb8-f052-4fc3-a900-f58cee9c5600, tls: true, skip-cert-verify: true}
-  - {name: ap1-ca.er3.xyz:29983, server: ap1-ca.er3.xyz, port: 29983, type: http, username: 404343197108535296, password: 06818b48-1093-4fe4-891c-a5f8af9ffd0d, tls: true, skip-cert-verify: true}
+  - {name: jc.ap.fastqvpn.com:29980, server: jc.ap.fastqvpn.com, port: 29980, type: http, username: 405490086696714240, password: 1157a4d4-96ae-4ddc-8258-b57fe9295bfb, tls: true, skip-cert-verify: false}
+  - {name: gj.ap.fastqvpn.com:29980, server: gj.ap.fastqvpn.com, port: 29980, type: http, username: 405490086696714240, password: 1157a4d4-96ae-4ddc-8258-b57fe9295bfb, tls: true, skip-cert-verify: false}
+  - {name: jc.ap.fastqvpn.com:29980, server: jc.ap.fastqvpn.com, port: 29980, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true, skip-cert-verify: false}
+  - {name: gj.ap.fastqvpn.com:29980, server: gj.ap.fastqvpn.com, port: 29980, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true, skip-cert-verify: false}
+  - {name: jc.ap.fastqvpn.com:29985, server: jc.ap.fastqvpn.com, port: 29985, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true, skip-cert-verify: true}
+  - {name: jc.ap.fastqvpn.com:29985, server: jc.ap.fastqvpn.com, port: 29985, type: http, username: 405490086696714240, password: 1157a4d4-96ae-4ddc-8258-b57fe9295bfb, tls: true, skip-cert-verify: true}
+  - {name: jc.ap.fastqvpn.com:29982, server: jc.ap.fastqvpn.com, port: 29982, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true, skip-cert-verify: true}
 proxy-groups:
   - name: 馃殌 鑺傜偣閫夋嫨
     type: select
