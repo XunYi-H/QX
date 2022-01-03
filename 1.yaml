@@ -1,8 +1,8 @@
 proxies:
-  - {name: 一键连1, type: http, server: a1.ap.fastqvpn.com, port: 29980, username: "414386716774760448", password: "00e54804-7fa8-47c5-a4f5-5476d9b8f68d", tls: true }
-  - {name: 一键连2, type: http, server: a2.ap.fastqvpn.com, port: 29980, username: "414386716774760448", password: "00e54804-7fa8-47c5-a4f5-5476d9b8f68d", tls: true }
-  - {name: 一键连3, type: http, server: a3.ap.fastqvpn.com, port: 29980, username: "414386716774760448", password: "00e54804-7fa8-47c5-a4f5-5476d9b8f68d", tls: true }  
-  - {name: 一键连4, type: http, server: a4.ap.fastqvpn.com, port: 29980, username: "414386716774760448", password: "00e54804-7fa8-47c5-a4f5-5476d9b8f68d", tls: true }
+  - {name: 一键连1, type: http, server: jc.ap.fastqvpn.com, port: 29980, username: "405490086696714240", password: "1157a4d4-96ae-4ddc-8258-b57fe9295bfb", tls: true }
+  - {name: 一键连2, type: http, server: gj.ap.fastqvpn.com, port: 29980, username: "405490086696714240", password: "1157a4d4-96ae-4ddc-8258-b57fe9295bfb", tls: true }
+  - {name: 一键连3, type: http, server: jc.ap.fastqvpn.com, port: 29985, username: "405490086696714240", password: "1157a4d4-96ae-4ddc-8258-b57fe9295bfb", tls: true }  
+  - {name: 一键连4, type: http, server: jc.ap.fastqvpn.com, port: 29988, username: "405490086696714240", password: "1157a4d4-96ae-4ddc-8258-b57fe9295bfb", tls: true }
 proxy-groups:
   - name: 🎯 总模式
     type: select
