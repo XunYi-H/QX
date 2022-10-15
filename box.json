@@ -711,16 +711,7 @@
     {
             "id": "jzyl",
             "name": "健走有礼",
-            "keys": ["jzylbody", "jzylCookie", "jzylbody2", "jzylCookie2", "jzylbody3", "jzylCookie3", 
-                    "jzylbody4", "jzylCookie4", "jzylbody5", "jzylCookie5", "jzylbody6", "jzylCookie6", 
-                    "jzylbody7", "jzylCookie7", "jzylbody8", "jzylCookie8", "jzylbody9", "jzylCookie9", 
-                    "jzylbody10", "jzylCookie10", "jzylbody11", "jzylCookie11", "jzylbody12", "jzylCookie12", 
-                    "jzylbody13", "jzylCookie13", "jzylbody14", "jzylCookie14", "jzylbody15", "jzylCookie15", 
-                    "jzylbody16", "jzylCookie16", "jzylbody17", "jzylCookie17", "jzylbody18", "jzylCookie18", 
-                    "jzylbody19", "jzylCookie19", "jzylbody20", "jzylCookie20", "jzylbody21", "jzylCookie21", "jzylbody22", "jzylCookie22", 
-                    "jzylbody23", "jzylCookie23", "jzylbody24", "jzylCookie24", "jzylbody25", "jzylCookie25", 
-                    "jzylbody26", "jzylCookie26", "jzylbody27", "jzylCookie27", "jzylbody28", "jzylCookie28", 
-                    "jzylbody29", "jzylCookie29", "jzylbody30", "jzylCookie30"],
+            "keys": ["jzylCookie"],
             "author": "@XunYi",
             "settings": [
                 {
