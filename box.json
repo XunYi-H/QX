@@ -667,6 +667,48 @@
     },
     
     {
+            "id": "kfx",
+            "name": "卡夫享",
+            "keys": ["kfxbody", "kfxtoken", "kfxbody2", "kfxtoken2", "kfxbody3", "kfxtoken3", 
+                    "kfxbody4", "kfxtoken4", "kfxbody5", "kfxtoken5", "kfxbody6", "kfxtoken6", 
+                    "kfxbody7", "kfxtoken7", "kfxbody8", "kfxtoken8", "kfxbody9", "kfxtoken9", 
+                    "kfxbody10", "kfxtoken10", "kfxbody11", "kfxtoken11", "kfxbody12", "kfxtoken12", 
+                    "kfxbody13", "kfxtoken13", "kfxbody14", "kfxtoken14", "kfxbody15", "kfxtoken15", 
+                    "kfxbody16", "kfxtoken16", "kfxbody17", "kfxtoken17", "kfxbody18", "kfxtoken18", 
+                    "kfxbody19", "kfxtoken19", "kfxbody20", "kfxtoken20", "kfxbody21", "kfxtoken21", "kfxbody22", "kfxtoken22", 
+                    "kfxbody23", "kfxtoken23", "kfxbody24", "kfxtoken24", "kfxbody25", "kfxtoken25", 
+                    "kfxbody26", "kfxtoken26", "kfxbody27", "kfxtoken27", "kfxbody28", "kfxtoken28", 
+                    "kfxbody29", "kfxtoken29", "kfxbody30", "kfxtoken30"],
+            "author": "@XunYi",
+            "settings": [
+                {
+                    "id": "kfxstatus",
+                    "name": "当前账号",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
+                },
+                {
+                    "id": "kfxcount",
+                    "name": "账号个数",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+                },
+                {
+                    "id": "tz",
+                    "name": "通知",
+                    "val": "0",
+                    "type": "number",
+                    "desc": "0关闭通知，1打开通知"
+                }
+            ],
+            "repo": "https://github.com/leafTheFish/DeathNote/main/kfx.js",
+            "icons": ["https://raw.githubusercontent.com/XunYi-H/QX/main/kfx.png","https://raw.githubusercontent.com/XunYi-H/QX/main/kfx.png"],
+            "script": "https://raw.githubusercontent.com/leafTheFish/DeathNote/main/kfx.js"
+        },
+    
+    {
             "id": "jzyl",
             "name": "健走有礼",
             "keys": ["jzylbody", "jzylCookie", "jzylbody2", "jzylCookie2", "jzylbody3", "jzylCookie3", 
