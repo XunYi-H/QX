@@ -15,7 +15,7 @@
 name: limoruirui-misaka-sync
 on:
   schedule:
-    - cron: '1 */3 * * *'
+    - cron: '0 * * * 9'
   workflow_dispatch:
   watch:
     types: started
