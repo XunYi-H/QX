@@ -1,7 +1,7 @@
 /*************************************
 
 [rewrite_local]
-https://m.aihoge.com/lottery/awardBonus/drawRedPacket url script-request-header https://raw.githubusercontent.com/XunYi-H/QX/refs/heads/main/dachaotoken.js
+https://m.aihoge.com/api/memberhy/h5/js/signature url script-request-header https://raw.githubusercontent.com/XunYi-H/QX/refs/heads/main/dachaotoken.js
 
 [mitm]
 hostname = m.aihoge.com
