@@ -1,10 +1,10 @@
 /*************************************
 
 [rewrite_local]
-https://aas.caiyun.feixin.10086.cn:443/tellin/authTokenRefresh.do url script-request-header https://raw.githubusercontent.com/XunYi-H/QX/refs/heads/main/ydypauth.js
+https://user-njs.yun.139.com/user/auth/refreshToken url script-request-header https://raw.githubusercontent.com/XunYi-H/QX/refs/heads/main/ydypauth.js
 
 [mitm]
-hostname = aas.caiyun.feixin.10086.cn:443
+hostname = user-njs.yun.139.com
 
 *************************************/
 
