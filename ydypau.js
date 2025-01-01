@@ -1,7 +1,7 @@
 /*************************************
 
 [rewrite_local]
-https://user-njs.yun.139.com/user/auth/refreshToken url script-request-header https://raw.githubusercontent.com/XunYi-H/QX/refs/heads/main/ydypauth.js
+https://user-njs.yun.139.com/user/auth/refreshToken url script-request-header https://raw.githubusercontent.com/XunYi-H/QX/refs/heads/main/ydypau.js
 
 [mitm]
 hostname = user-njs.yun.139.com
